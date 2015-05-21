@@ -15,12 +15,7 @@ body {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 
 /* Custom page header */
 .header {
@@ -87,5 +82,126 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+#pageHeader {
+  width: 100%;
+  height: 64px;
+  clear: both;
+  text-align: left;
+  background: #063340;
+  position: relative;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: roboto, Droid Sans, Helvetica, Arial;
+  font-size: medium;
+  text-align: center;
+  margin: 0.5em 4% 0.5em 4%;
+  background: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  -ms-touch-action: pan-y;
+  -webkit-tap-highlight-color: rgba(60,94,119,0.25);
+}
+
+#pageHeader .newLogoOnet {
+  background: url(http://ocdn.eu/static/template-engine/MDU7MDA_/735f0426de30c4c4514255298457f96d/sprites/sgv2.png);
+  background-position: -1px 50px;
+  display: inline-block;
+  width: 101px;
+  height: 32px;
+}
+
+#pageHeader #icons {
+  display: block;
+  margin-right: 10px;
+  right: 5px;
+  top: 10px;
+  position: absolute;
+  z-index: 40;
+}
+
+#pageHeader #icons a {
+  color: #01A1C5;
+  font-size: 11px;
+  overflow: hidden;
+  text-indent: -9999px;
+  display: block;
+  width: 49px;
+  position: relative;
+  height: 58px;
+  background: url(http://ocdn.eu/static/template-engine/MDU7MDA_/735f0426de30c4c4514255298457f96d/sprites/sgv2.png) no-repeat scroll 0 0;
+  float: left;
+  background-position: -541px 0;
+  cursor: pointer;
+
+}
+
+#pageHeader #icons .i5, #menuFixedWrapper #pageNavTopNew #mainMenuContainer .icons a.i5 {
+  background-position: -180px 0;
+}
+
+#menuFixedWrapper #pageNavTopNew .buttonMenu.buttonMenuHide {
+  background-position: -541px 0;
+  cursor: pointer;
+}
+#menuFixedWrapper #pageNavTopNew .menuToggleBtn {
+  border-width: 1px 1px 0;
+  height: 49px;
+  width: 40px;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  z-index: 510000 !important;
+}
+#menuFixedWrapper #pageNavTopNew .buttonMenu {
+  -moz-border-radius: 0.37em;
+  -webkit-border-radius: 0.37em;
+  -khtml-border-radius: 0.37em;
+  border-radius: 0.37em;
+  height: 49px;
+  width: 40px;
+  text-indent: -9999px;
+  background: url(http://ocdn.eu/static/template-engine/MDU7MDA_/735f0426de30c4c4514255298457f96d/sprites/sgv2.png);
+  background-repeat: no-repeat;
+}
+#pageNavTopNew .buttonMenu {
+  -moz-border-radius: 0.37em;
+  -webkit-border-radius: 0.37em;
+  -khtml-border-radius: 0.37em;
+  border-radius: 0.37em;
+  height: 49px;
+  width: 40px;
+  text-indent: -999px;
+}
+
+#pageHeader #logo {
+  float: left;
+  padding-top: 14px;
+  padding-left:10px;
+}
+#menuFixedWrapper #pageNavTopNew .buttonMenu.buttonMenuHide.menuOpen {
+  background-position: -588px 0;
+}
+
+#menuFixedWrapper #pageNavTopNew .buttonMenu.buttonMenuHide {
+  background-position: -541px 0;
+  cursor: pointer;
+}
+
+.header {
+  .container-fluid {
+    padding: 0;
+  }
+
+  .navbar.navbar-default {
+    border: none;
   }
 }

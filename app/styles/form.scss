@@ -1,6 +1,57 @@
 @import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here&subset=latin,latin-ext);
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
 
 #logMain{
+	
+	#logout{
+		position:fixed;
+		right:30px;
+		top:100px;
+		
+		background:none!important;
+		 border:none;
+		 padding:3px;
+		 /*border is optional*/
+		 color:rgba(6, 51, 64, 1);
+		 
+		 border-bottom:1px solid rgba(6, 51, 64, 1);
+		 border-top:1px solid rgba(6, 51, 64, 1);
+		 cursor: pointer;
+	  transition: padding 1s ease;
+		
+		
+	}
+	#logout:hover{
+		padding: 10px 3px;
+	}
+
+font-family: 'Roboto', sans-serif;
+	position:relative;
+	background: url("../images/143223082088218.jpg") no-repeat center 0;
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;         /* Generic*/
+	border-bottom: 0;
+  -webkit-transition: background-size 2s ease-in;
+  min-height:650px;
+  transition: background-size 2s ease-in;
+  -moz-transition: background-size 2s ease-in;
+  -ms-transition: background-size 2s ease-in;
+  -o-transition: background-size 2s ease-in;
+
+  .gradient {
+    background-color: rgba(252,175,23,0.55);
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+
 padding:0;margin:0;
 	position:relative;
 	}
@@ -8,19 +59,19 @@ padding:0;margin:0;
 	font-weight:900;
 		text-align:center;
 		font-size:35px;
-		color:rgba(200,100,2,0.8);
+			color: #063340;
 	}
 	.subtitle{
 
 	font-weight:900;
-		font-family: 'Just Me Again Down Here', cursive;
+		font-family: 'Patrick Hand', cursive;
 		text-align:center;
 		font-size:40px;
 		color:rgba(200,100,2,1);
 	}
 	#logContent{
 	
-
+	padding-top:100px;
 	text-align:left;
 	.content{
 	padding-left:100px;
@@ -57,17 +108,18 @@ padding:0;margin:0;
 	color:rgba(0,0,0,0.6);
 }
 	form{
+	z-index:10;
 	margin:40px auto;
 	padding:10px;
 	
-		font-family: 'Just Me Again Down Here', cursive;
+		font-family: 'Patrick Hand', cursive;
 		max-width:300px;
 		background:rgba(255, 212, 44, 0.8);
 		input {
 		 background:none!important;
 		 border:none;
 		 padding:3px;
-		 font-size: 30px;
+		 font-size: 25px;
 		 /*border is optional*/
 		 color:rgba(6, 51, 64, 1);
 		 cursor: pointer;
@@ -83,19 +135,21 @@ padding:0;margin:0;
 		cursor: pointer;
 		transition: padding 1s ease;
 	}
+
+	
 	.button{
 		text-align:right;
 		}
 	
 	button{
-		font-size: 30px;
+		font-size: 25px;
 		margin-top:10px;
 		
 		width:60%;
 		background:none!important;
 		 border:none;
 		 padding:3px;
-		 font-size: 30px;
+		 font-size: 25px;
 		 /*border is optional*/
 		 color:rgba(6, 51, 64, 1);
 		 
@@ -149,7 +203,7 @@ padding:0;margin:0;
 		color:white;}
 	.thankYou{
 	
-		font-family: 'Open Sans',Arial,sans-serif;
+		font-family: 'Patrick Hand', cursive;
 		
 		margin:30px 50px;
 	}

@@ -46,12 +46,23 @@ angular.module('onetBragApp')
 	$scope.hideEl = function(name){
 		var el = document.getElementById(name);
 		el.style.display="none";
+		
 	}
 
 	$scope.showEl = function(name){
 		var el = document.getElementById(name);
 		el.style.display="block";
 	}
+	
+	
+	$scope.clearForm = function(name){
+		document.getElementById('subject').value='';
+		document.getElementById('description').value='';
+	
+	}
+	
+	
+
 
 	$scope.logout = function(name){
 		delete localStorage.logged;

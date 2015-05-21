@@ -8,7 +8,7 @@
 		<div class="title col-sm-12">ZGŁOŚ POMYSŁ - ZAMIENIAMY SIĘ W SŁUCH!</div>
     <hr>
 		<div class="content col-sm-12">
-      <div class="col-lg-4 col-lg-offset-2 mobile-hide">
+      <div class="col-lg-5 col-lg-offset-1 mobile-hide">
         <ul class="ulist ">
           <li>Zrób coś dla innych, a inni zrobią coś dla Ciebie</li>
           <li>Zgarnij nagrody za najlepsze pomysły</li>
@@ -23,8 +23,8 @@
 			</div>
 		</div>
 	</div>
-	<div id="logPopup">
-		<span>Zaloguj się, aby wysłać pomysł:</span>
+	<div id="logPopup">  <button id="closeButton" ng-click="hideEl('logPopup')">X</button>
+		<span>Zaloguj się, aby wysłać pomysł:</span> 
 		<form class="formContainer" ng-submit="validateSet()">
 			<ul>
 				<li>
@@ -48,13 +48,12 @@
 					<input class="loginButton" type="submit" value="Zaloguj">
 				</li>
 			</ul>
-      <button ng-click="hideEl('logPopup')">Zamknij okno logowania
-      </button>
+     
 			<ul class="extendedLinks">
 				<li>
 					<input type="hidden" name="access_token">
 					<div class="externalLogin">
-						<button type="button" class="facebookLoginButton" ng-click="goThroughFb()">
+						<button type="button" id="facebookLoginButton" ng-click="goThroughFb()">
 							<span>Użyj Facebooka</span>
 						</button>
 					</div>

@@ -205,3 +205,33 @@ body {
     border: none;
   }
 }
+
+.footer {
+  background-color: rgb(252,175,23);
+  border: none;
+  padding: 10px 0 20px 0;
+
+  p {
+    margin: 10px auto;
+    color: #063340;
+
+    .white {
+      color: white;
+    }
+
+    .black {
+      color: black;
+    }
+
+    .yellow {
+      color: rgb(252,175,23)
+    }
+  }
+
+  .glyphicon {
+    vertical-align: middle;
+    color: #063340;
+  }
+
+}
+

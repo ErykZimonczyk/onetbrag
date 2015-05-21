@@ -3,7 +3,7 @@
 .promo-wrapper {
   background: #063340;
   font-family: 'Roboto', sans-serif;
-  padding: 10px 0 0;
+  padding: 10px 0;
 
   header {
     h1 {
@@ -39,6 +39,9 @@
         position: absolute;
         top: 0;
         left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       box-sizing: border-box;
@@ -51,14 +54,15 @@
 
       .idea-text {
         z-index: 3;
-        position: absolute;
-        bottom: 2px;
-        left: 2px;
         width: 250px;
         overflow: hidden;
+        color: white;
+        font-weight: 700;
+        font-size: 35px;
       }
 
       .idea-image {
+        position: absolute;
         img {
           overflow: hidden;
           height: 250px;

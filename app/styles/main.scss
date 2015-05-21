@@ -89,3 +89,138 @@ body {
     border-bottom: 0;
   }
 }
+
+.container{
+margin:0;
+padding:0;
+width:100%;
+max-width: 100%;}
+
+#main {
+	font-family: 'Roboto', sans-serif;
+	position:relative;
+	background: url("../images/onetbackground.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+	border-bottom: 0;
+	min-height:650px;
+	transition: background-position 1s ease;  
+	&:hover{
+		background-position:-100px;
+   
+	}
+	.submain{
+		padding:50px;
+		padding-top:250px
+	}
+	.title{
+	font-weight:900;
+		text-align:center;
+		font-size:45px;
+		color:rgba(200,100,2,0.8);
+	}
+	.subtitle{
+	
+	font-weight:900;
+		font-family: 'Calligraffitti', cursive;
+		text-align:center;
+		font-size:30px;
+		color:rgba(200,100,2,1);
+	}
+	
+	button {
+     background:none!important;
+     border:none; 
+     padding:3px;
+     font-size: 25px;
+     /*border is optional*/
+	 color:rgba(200,100,2,0.8);
+     border-bottom:2px solid rgba(200,100,2,0.8); 
+     border-top:2px solid rgba(200,100,2,0.8);
+     cursor: pointer;
+	  transition: padding 1s ease;  
+	}
+	button:hover{
+	 padding-top:10px;
+	 padding-bottom:10px;
+	 
+	}
+	
+	.content{
+	padding-top:100px;
+		display: flex;
+	}
+	.ulist{
+	
+		color:rgba(200,100,2,0.8);
+		flex: 1;
+		font-size:20px;
+		}
+	.sendIdea{
+	padding-top:50px;
+		height:100%;
+		
+	}
+	.clearfix:after {
+		  content: ".";
+		  display: block;
+		  clear: both;
+		  visibility: hidden;
+		  line-height: 0;
+		  height: 0;
+		  }
+	
+}
+
+#logPopup{
+	display:none;
+	background:rgba(0,0,0,0.5);
+	position: absolute;
+	top:0;
+	height:100%;
+	width:100%;
+	
+	
+	
+	.facebookLoginButton {
+	  width: 175px;
+	  height: 35px;
+	  display: block;
+	  margin: 18px auto;
+	  background-color: #4a6ea9;
+	  color: #FFF;
+	  line-height: 35px;
+	  text-align: center;
+	  font-weight: bold;
+	  font-size: 13px;
+	  text-decoration: none;
+	  border: 0;
+	  padding: 0;
+	  }
+		
+	}
+
+
+
+#logMain{
+	position:relative;
+
+}
+#thanks{
+	display:none;
+	background:rgba(0,0,0,0.5);
+	position: absolute;
+	top:0;
+	height:100%;
+	width:100%;
+	
+	
+}
+
+#unproper_login{
+	display:none;
+}
+
+

@@ -1,23 +1,69 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+<div id="main">
+	<div class="submain">
+			<div class="subtitle">Zbudujemy Twój Onet</div>
+			<hr/>
+		<div class="title">DAJ POMYSŁ - ZAMIENIAMY SIĘ W SŁUCH!</div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+			<hr/>
+		<div class="content">
+			<ul class="ulist col-xs-8">
+				<li>Zrób coś dla innych, a inni zrobią coś dla Ciebie</li>
+				<li>Zgarnij nagrody za najlepsze pomysły</li>
+				<li>Pochwal się swoim działającym pomysłem!</li>
+				<li>Zainspiruj nas!</li>
+				<li>Chcemy rozwijać się dla Ciebie</li>
+			</ul>
+			<div class="sendIdea col-xs-4">
+				<button ng-click="showEl('logPopup')">Zgłoś pomysł!
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="logPopup">
+		Zaloguj się, aby wysłać pomysł:
+		<form class="formContainer" ng-submit="validateSet()">
+			<ul>
+				<li>
+					<label class="inputData" for="f_login">
+						E-mail:
+					</label>
+					<input type="text" id="f_login" name="login">
+				</li>
+				<li>
+					<label class="inputData" for="f_password">
+						Hasło:
+					</label>
+					<input type="password" id="f_password" name="password">
+				</li>
+				<li class="perm">
+					<input type="hidden" name="perm" value="0">
+					<label for="f_perm">
+						<input type="checkbox" id="f_perm" name="perm" value="1">
+						Zapamiętaj mnie
+					</label>
+					<input class="loginButton" type="submit" value="Zaloguj">
+				</li>
+			</ul>
+			<ul class="extendedLinks">
+				<li>
+					<input type="hidden" name="access_token">
+					<div class="externalLogin">
+						<button type="button" class="facebookLoginButton" ng-click="goThroughFb()">
+							<span>Użyj Facebooka</span>
+						</button>
+					</div>
+				</li>
+			</ul>
+			<div id="unproper_login">
+				Niepoprawny login lub hasło, spróbuj ponownie.
+			</div>
+		</form>
+		<button ng-click="hideEl('logPopup')">Zamknij okno logowania
+		</button>
+	</div>
+	
+	<div class="clearfix"></div>
+	
 </div>

@@ -1,0 +1,32 @@
+<div id="logMain">
+	<form id="ideaForm">
+		Opisz swój pomysł na ulepszenie Onetu!<br/>
+		<input type="text" name="subject" placeholder="Nazwa pomysłu">
+		<br>
+		<textarea name="idea" rows="10" cols="30" placeholder="Opisz tutaj pomysł"></textarea>
+		<br/>
+		<select name="kind">
+			<option>sugestia</option>
+			<option>błąd</option>
+			<option>pochwała</option>
+		</select>
+		<br/>
+		<button ng-click=showEl('thanks')> Wyslij </button>
+		
+		
+		
+	
+	</form>
+	
+	<div id="thanks">
+			<div id="title">
+			DZIĘKUJEMY!
+			</div>
+			Dziękujemy, że zechciałeś podzielić się swoim pomysłem!
+			Twój pomysł jest dla nas bardzo ważny! Niebawem zostanie poddany dyskusji przez naszych pracowników i być może wprowadzony w życie :)
+			Jeśli tak się stanie, na pewno poinformujemy Cię o tym drogą mailową. Dzięki!
+		<button ng-click="hideEl('thanks')"> Dodaj nowy pomysł </button>
+		
+		</div>
+		<button ng-click="logout()"> Wyloguj </button>
+</div>

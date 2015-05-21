@@ -1,9 +1,17 @@
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
 <div id="logMain">
+		<div id="logContent">
+		<div class="title">
+		Opisz swój pomysł na ulepszenie Onetu!
+		</div>
 	<form id="ideaForm">
-		Opisz swój pomysł na ulepszenie Onetu!<br/>
+	
+		<br/>
 		<input type="text" name="subject" placeholder="Nazwa pomysłu">
 		<br>
-		<textarea name="idea" rows="10" cols="30" placeholder="Opisz tutaj pomysł"></textarea>
+		<textarea name="idea" rows="6" cols="30" placeholder="Opisz tutaj pomysł"></textarea>
 		<br/>
 		<select name="kind">
 			<option>sugestia</option>
@@ -11,22 +19,28 @@
 			<option>pochwała</option>
 		</select>
 		<br/>
+		<div class="button">
 		<button ng-click=showEl('thanks')> Wyslij </button>
-		
+		</div>
 		
 		
 	
 	</form>
+	</div>
 	
 	<div id="thanks">
-			<div id="title">
+		<div class="thanksContent">
+			<div class="title">
 			DZIĘKUJEMY!
 			</div>
+			<div class="thankYou">
 			Dziękujemy, że zechciałeś podzielić się swoim pomysłem!
 			Twój pomysł jest dla nas bardzo ważny! Niebawem zostanie poddany dyskusji przez naszych pracowników i być może wprowadzony w życie :)
 			Jeśli tak się stanie, na pewno poinformujemy Cię o tym drogą mailową. Dzięki!
+		</div>
 		<button ng-click="hideEl('thanks')"> Dodaj nowy pomysł </button>
 		
 		</div>
-		<button ng-click="logout()"> Wyloguj </button>
+		</div>
+		<button ng-click="logout()" style="display:none;"> Wyloguj </button>
 </div>

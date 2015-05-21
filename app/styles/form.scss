@@ -1,0 +1,176 @@
+@import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here&subset=latin,latin-ext);
+
+#logMain{
+padding:0;margin:0;
+	position:relative;
+	}
+	.title{
+	font-weight:900;
+		text-align:center;
+		font-size:35px;
+		color:rgba(200,100,2,0.8);
+	}
+	.subtitle{
+
+	font-weight:900;
+		font-family: 'Just Me Again Down Here', cursive;
+		text-align:center;
+		font-size:40px;
+		color:rgba(200,100,2,1);
+	}
+	#logContent{
+	
+
+	text-align:left;
+	.content{
+	padding-left:100px;
+	}
+	
+	::-webkit-input-placeholder {
+   display:inline-block;
+    border-bottom:1px solid black;
+    padding-bottom:2px;
+	color:rgba(0,0,0,0.6);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   
+    display:inline-block;
+    border-bottom:1px solid black;
+    padding-bottom:2px;
+	color:rgba(0,0,0,0.6);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   
+   display:inline-block;
+    border-bottom:1px solid black;
+    padding-bottom:2px;
+	color:rgba(0,0,0,0.6);
+}
+
+:-ms-input-placeholder {  
+   
+    display:inline-block;
+    border-bottom:1px solid black;
+    padding-bottom:2px;
+	color:rgba(0,0,0,0.6);
+}
+	form{
+	margin:40px auto;
+	padding:10px;
+	
+		font-family: 'Just Me Again Down Here', cursive;
+		max-width:300px;
+		background:rgba(255, 212, 44, 0.8);
+		input {
+		 background:none!important;
+		 border:none;
+		 padding:3px;
+		 font-size: 30px;
+		 /*border is optional*/
+		 color:rgba(6, 51, 64, 1);
+		 cursor: pointer;
+		  transition: padding 1s ease;
+	}
+	textarea{
+		background:none!important;
+		border:none;
+		padding:3px;
+		font-size: 25px;
+		/*border is optional*/
+		color:rgba(6, 51, 64, 1);
+		cursor: pointer;
+		transition: padding 1s ease;
+	}
+	.button{
+		text-align:right;
+		}
+	
+	button{
+		font-size: 30px;
+		margin-top:10px;
+		
+		width:60%;
+		background:none!important;
+		 border:none;
+		 padding:3px;
+		 font-size: 30px;
+		 /*border is optional*/
+		 color:rgba(6, 51, 64, 1);
+		 
+		 border-bottom:1px solid rgba(6, 51, 64, 1);
+		 border-top:1px solid rgba(6, 51, 64, 1);
+		 cursor: pointer;
+	  transition: background-color 1s ease;
+	  
+	}
+	
+	button:hover{
+		background-color: rgba(6, 51, 64, 1);
+		color:#063340;
+	}
+	
+	select{
+		background:none!important;
+		border:none;
+		padding:3px;
+		font-size: 30px;
+		/*border is optional*/
+		color:rgba(0,0,2,0.8);
+		border-bottom:1px solid rgba(0,0,0,0.8);
+		border-top:1px solid rgba(0,0,0,0.8);
+		cursor: pointer;
+		transition: padding 1s ease;
+		text-align:center;
+		font-size: 25px;
+		width:100%;
+	}
+	
+	}
+}
+
+#thanks{
+	display:none;
+	position: absolute;
+	top:0;
+	height:100%;
+	width:100%;
+	padding:0;
+	margin:0;
+	background:rgba(6, 51, 64, 0.8);
+	text-align:center;
+	font-size:25px;
+	color: white;
+	.thanksContent{
+		padding:100px;
+	}
+	.title{
+		color:white;}
+	.thankYou{
+	
+		font-family: 'Open Sans',Arial,sans-serif;
+		
+		margin:30px 50px;
+	}
+	button {
+		background:none!important;
+		border:none;
+		padding:3px;
+		/*border is optional*/
+		color:white;
+		border-bottom:2px solid white;
+		border-top:2px solid white;
+		cursor: pointer;
+		transition: padding 1s ease;
+	}
+	button:hover{
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+}
+
+#unproper_login{
+	display:none;
+}
+

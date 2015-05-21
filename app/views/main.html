@@ -1,28 +1,30 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
 <div id="main">
+  <span class="gradient"></span>
 	<div class="submain">
-			<div class="subtitle">Zbudujemy Twój Onet</div>
-			<hr/>
-		<div class="title">DAJ POMYSŁ - ZAMIENIAMY SIĘ W SŁUCH!</div>
-
-			<hr/>
-		<div class="content">
-			<ul class="ulist col-xs-8">
-				<li>Zrób coś dla innych, a inni zrobią coś dla Ciebie</li>
-				<li>Zgarnij nagrody za najlepsze pomysły</li>
-				<li>Pochwal się swoim działającym pomysłem!</li>
-				<li>Zainspiruj nas!</li>
-				<li>Chcemy rozwijać się dla Ciebie</li>
-			</ul>
-			<div class="sendIdea col-xs-4">
+		<div class="subtitle col-sm-12">Zbudujemy Twój Onet</div>
+    <hr>
+		<div class="title col-sm-12">ZGŁOŚ POMYSŁ - ZAMIENIAMY SIĘ W SŁUCH!</div>
+    <hr>
+		<div class="content col-sm-12">
+      <div class="col-lg-4 col-lg-offset-2 mobile-hide">
+        <ul class="ulist ">
+          <li>Zrób coś dla innych, a inni zrobią coś dla Ciebie</li>
+          <li>Zgarnij nagrody za najlepsze pomysły</li>
+          <li>Pochwal się swoim działającym pomysłem!</li>
+          <li>Zainspiruj nas!</li>
+          <li>Chcemy rozwijać się dla Ciebie</li>
+        </ul>
+      </div>
+			<div class="sendIdea col-lg-4 col-sm-12">
 				<button ng-click="showEl('logPopup')">Zgłoś pomysł!
 				</button>
 			</div>
 		</div>
 	</div>
 	<div id="logPopup">
-		Zaloguj się, aby wysłać pomysł:
+		<span>Zaloguj się, aby wysłać pomysł:</span>
 		<form class="formContainer" ng-submit="validateSet()">
 			<ul>
 				<li>
@@ -46,6 +48,8 @@
 					<input class="loginButton" type="submit" value="Zaloguj">
 				</li>
 			</ul>
+      <button ng-click="hideEl('logPopup')">Zamknij okno logowania
+      </button>
 			<ul class="extendedLinks">
 				<li>
 					<input type="hidden" name="access_token">
@@ -60,8 +64,7 @@
 				Niepoprawny login lub hasło, spróbuj ponownie.
 			</div>
 		</form>
-		<button ng-click="hideEl('logPopup')">Zamknij okno logowania
-		</button>
+
 	</div>
 
 	<div class="clearfix"></div>

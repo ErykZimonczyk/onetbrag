@@ -50,17 +50,25 @@
           <h1>Lista wdrożonych pomysłów</h1>
         </header>
         <ul class="idea-list" id="ideas">
-          <li class="idea" ng-repeat="idea in ideasCollection">
-            <a>
+          <li class="idea" ng-repeat="idea in ideasCollection" style="background-color: {{idea.color}}" ng-click="expand($event)">
+
               <div class="description-box" style="background-color: {{idea.color}}">
                 <span class="idea-text" >
                   {{idea.name}}
                 </span>
+
+
               </div>
+
               <span class="idea-image" style="left: {{idea.left}}">
                 <img src="{{idea.image}}"/>
               </span>
-            </a>
+              <div class="idea-desc-container">
+                <span class="idea-desc">
+                    {{idea.desc}}
+                </span>
+              </div>
+
           </li>
         </ul>
       </div>
